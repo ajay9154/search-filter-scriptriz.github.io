@@ -1,0 +1,166 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#navbar {
+    background-color: #333;
+    padding: 20px 10px;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+}
+
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative; /* Added position relative to the search-form */
+    color: black;
+}
+div#navbar h1 {
+    color: #ffffff;
+    margin: 3rem 0;
+    font-size: 4rem;
+    font-family: system-ui;
+}
+#searchInput {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+#searchInput:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#suggestions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%; /* Position the suggestions list below the search bar */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+    display: none;
+    z-index: 1;
+    text-align: left;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+#navbar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#navbar button:hover {
+    background-color: #45a049;
+    color: black;
+}
+.search-filter {
+max-width: 400px;
+margin: 0 auto;
+}
+
+
+
+
+h1 {
+    color: #eb1212;
+margin: 1rem 0;
+font-size: 2rem;
+}
+
+.result {
+    margin: 2rem 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.result:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result a {
+    text-decoration: none;
+    color: #333;
+}
+
+.result a:hover {
+    text-decoration: underline;
+}
+
+.result-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: #333;
+    color: #1155CC;
+    font-weight: 500 !important;
+}
+
+.result-url {
+    margin: 5px 0;
+    color: #009933;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;  
+      margin: 3rem 0;
+
+}
+
+.pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.pagination li.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.result-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 800px;
+}
+.results-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
